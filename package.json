@@ -1,0 +1,9 @@
+{
+  "name": "physiq-test-deps",
+  "private": true,
+  "description": "Root-level node_modules for tests_archive/ that live outside frontend/",
+  "devDependencies": {
+    "@testing-library/react": "^16.3.2",
+    "fast-check": "^4.6.0"
+  }
+}

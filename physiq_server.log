@@ -1,0 +1,168 @@
+C:\Users\Chintan\Downloads\Labs\Project\codebase\2321541_CS3072_CS3605\backend\utils\config.py:10: UserWarning: Field 'model_dir' in 'Settings' conflicts with protected namespace 'model_'.
+
+You may be able to solve this by setting the 'protected_namespaces' configuration to ('settings_',).
+  class Settings(BaseSettings):
+{"time": "2026-05-03T21:32:07.930778+00:00", "level": "INFO", "logger": "server", "message": "Starting server at http://0.0.0.0:8000"}
+INFO:     Started server process [14032]
+INFO:     Waiting for application startup.
+2026-05-03 22:32:23,690 - BaseModel - INFO - Loaded model from models\regression_chest_change_cm_best.pkl
+2026-05-03 22:32:23,690 - GymProgressPredictor - INFO - Loaded model: chest_change from regression_chest_change_cm_best.pkl
+2026-05-03 22:32:23,696 - BaseModel - INFO - Loaded model from models\regression_biceps_change_cm_best.pkl
+2026-05-03 22:32:23,696 - GymProgressPredictor - INFO - Loaded model: biceps_change from regression_biceps_change_cm_best.pkl
+2026-05-03 22:32:23,701 - BaseModel - INFO - Loaded model from models\regression_waist_change_cm_best.pkl
+2026-05-03 22:32:23,701 - GymProgressPredictor - INFO - Loaded model: waist_change from regression_waist_change_cm_best.pkl
+2026-05-03 22:32:23,711 - BaseModel - INFO - Loaded model from models\classification_chest_category_best.pkl
+2026-05-03 22:32:23,711 - GymProgressPredictor - INFO - Loaded model: chest_category from classification_chest_category_best.pkl
+2026-05-03 22:32:23,717 - BaseModel - INFO - Loaded model from models\classification_biceps_category_best.pkl
+2026-05-03 22:32:23,717 - GymProgressPredictor - INFO - Loaded model: biceps_category from classification_biceps_category_best.pkl
+2026-05-03 22:32:23,726 - BaseModel - INFO - Loaded model from models\classification_waist_category_best.pkl
+2026-05-03 22:32:23,726 - GymProgressPredictor - INFO - Loaded model: waist_category from classification_waist_category_best.pkl
+2026-05-03 22:32:23,735 - BaseModel - INFO - Loaded model from models\multi_output_best.pkl
+2026-05-03 22:32:23,735 - GymProgressPredictor - INFO - Loaded model: multi_output from multi_output_best.pkl
+2026-05-03 22:32:23,735 - GymProgressPredictor - INFO - Loaded 7/7 models
+2026-05-03 22:32:23,856 - GymProgressPredictor - INFO - Input validator initialized with training data statistics
+2026-05-03 22:32:23,856 - BaseModel - INFO - Loaded model from models\regression_chest_change_cm_best.pkl
+2026-05-03 22:32:23,856 - GymProgressPredictor - INFO - Loaded model: chest_change from regression_chest_change_cm_best.pkl
+2026-05-03 22:32:23,856 - BaseModel - INFO - Loaded model from models\regression_biceps_change_cm_best.pkl
+2026-05-03 22:32:23,857 - GymProgressPredictor - INFO - Loaded model: biceps_change from regression_biceps_change_cm_best.pkl
+2026-05-03 22:32:23,857 - BaseModel - INFO - Loaded model from models\regression_waist_change_cm_best.pkl
+2026-05-03 22:32:23,857 - GymProgressPredictor - INFO - Loaded model: waist_change from regression_waist_change_cm_best.pkl
+2026-05-03 22:32:23,857 - BaseModel - INFO - Loaded model from models\classification_chest_category_best.pkl
+2026-05-03 22:32:23,857 - GymProgressPredictor - INFO - Loaded model: chest_category from classification_chest_category_best.pkl
+2026-05-03 22:32:23,857 - BaseModel - INFO - Loaded model from models\classification_biceps_category_best.pkl
+2026-05-03 22:32:23,857 - GymProgressPredictor - INFO - Loaded model: biceps_category from classification_biceps_category_best.pkl
+2026-05-03 22:32:23,857 - BaseModel - INFO - Loaded model from models\classification_waist_category_best.pkl
+2026-05-03 22:32:23,857 - GymProgressPredictor - INFO - Loaded model: waist_category from classification_waist_category_best.pkl
+2026-05-03 22:32:23,857 - BaseModel - INFO - Loaded model from models\multi_output_best.pkl
+2026-05-03 22:32:23,858 - GymProgressPredictor - INFO - Loaded model: multi_output from multi_output_best.pkl
+2026-05-03 22:32:23,858 - GymProgressPredictor - INFO - Loaded 7/7 models
+2026-05-03 22:32:23,948 - GymProgressPredictor - INFO - Input validator initialized with training data statistics
+
+============================================================
+STAGE 1: Loading ANSUR II Data
+============================================================
+  Loading male data from: ANSUR_II_MALE_Public.csv
+    -> Loaded 4082 male records
+  Loading female data from: ANSUR_II_FEMALE_Public.csv
+    -> Loaded 1986 female records
+  Removed 96 outlier records
+  Final dataset: 5972 clean records
+  Features: ['chest_cm', 'biceps_cm', 'waist_cm', 'height_cm', 'weight_kg', 'age', 'gender', 'bmi']
+
+============================================================
+STAGE 2: Generating Synthetic Training Data
+============================================================
+  Target samples: 100
+  Generated data passed all validation checks
+  Saved synthetic data to: output\synthetic_training_data.csv
+
+  Change Distribution Summary:
+    Chest:  mean=1.46cm, std=0.90cm
+    Biceps: mean=0.92cm, std=0.51cm
+    Waist:  mean=-3.65cm, std=1.77cm
+
+============================================================
+STAGE 1: Loading ANSUR II Data
+============================================================
+  Loading male data from: ANSUR_II_MALE_Public.csv
+    -> Loaded 4082 male records
+  Loading female data from: ANSUR_II_FEMALE_Public.csv
+    -> Loaded 1986 female records
+  Removed 96 outlier records
+  Final dataset: 5972 clean records
+  Features: ['chest_cm', 'biceps_cm', 'waist_cm', 'height_cm', 'weight_kg', 'age', 'gender', 'bmi']
+
+============================================================
+STAGE 2: Generating Synthetic Training Data
+============================================================
+  Target samples: 100
+  Generated data passed all validation checks
+  Saved synthetic data to: output\synthetic_training_data.csv
+
+  Change Distribution Summary:
+    Chest:  mean=1.46cm, std=0.90cm
+    Biceps: mean=0.92cm, std=0.51cm
+    Waist:  mean=-3.65cm, std=1.77cm
+{"time": "2026-05-03T21:32:23.948481+00:00", "level": "INFO", "logger": "backend.services.predictor", "message": "Predictor models loaded successfully"}
+{"time": "2026-05-03T21:32:23.948481+00:00", "level": "INFO", "logger": "backend.app", "message": "Predictor ready"}
+{"time": "2026-05-03T21:32:23.973527+00:00", "level": "INFO", "logger": "backend.app", "message": "Server ready \u2014 GPU: yes"}
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:49866 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49965 - "GET /assets/index-D-wKp10G.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49866 - "GET /assets/index-CpmCXJ2j.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49866 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51361 - "GET /assets/WizardPage-C_vbuIwq.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51361 - "GET /assets/index-BkcOPdTZ.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51361 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50130 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:51734 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:51734 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:59846 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59757 - "GET /assets/index-D-wKp10G.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59846 - "GET /assets/index-CpmCXJ2j.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59846 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59846 - "GET /assets/WizardPage-C_vbuIwq.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59757 - "GET /assets/index-BkcOPdTZ.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59757 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:50730 - "GET /wizard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50730 - "GET /assets/index-CpmCXJ2j.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64699 - "GET /assets/index-D-wKp10G.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64699 - "GET /assets/WizardPage-C_vbuIwq.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50730 - "GET /assets/index-BkcOPdTZ.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:50730 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50730 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55772 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55772 - "GET /assets/index-D7PQvdkR.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55772 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51638 - "GET /assets/index-D-wKp10G.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55772 - "GET /assets/index-D7PQvdkR.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51638 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51638 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51638 - "GET /assets/index-D7PQvdkR.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55772 - "GET /assets/index-D-wKp10G.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51638 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51638 - "GET /assets/WizardPage-Caj6o5lm.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55772 - "GET /assets/index-o2EA3A_i.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55772 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:55772 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:55772 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:49714 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49714 - "GET /assets/index-D7PQvdkR.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49714 - "GET /assets/index-D-wKp10G.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49714 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49714 - "GET /assets/WizardPage-Caj6o5lm.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62586 - "GET /assets/index-o2EA3A_i.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62586 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:62586 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:62586 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:62586 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:57366 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:55651 - "GET /assets/index-D-wKp10G.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55651 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63283 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50751 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50751 - "GET /assets/index-FMouRD6X.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50751 - "GET /assets/index-D-wKp10G.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50751 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50751 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50751 - "GET /assets/WizardPage-B5KOKBCI.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57842 - "GET /assets/index-BC1XJOYd.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57842 - "GET /wizard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57842 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57842 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:57842 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:57842 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:51456 - "GET /assets/index-D-wKp10G.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51456 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59384 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:52790 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:50392 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:50998 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50998 - "GET /assets/index-B531hkSf.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50998 - "GET /assets/index-D-wKp10G.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50998 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50998 - "GET /assets/WizardPage-BAw7n2OO.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57063 - "GET /assets/index-kobsmzf8.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57063 - "POST /api/predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:57063 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 OK
